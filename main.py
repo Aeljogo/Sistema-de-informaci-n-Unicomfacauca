@@ -184,13 +184,30 @@ if __name__ == "__main__":
 
 
 
-#Para el punto 5, se desarrolla lo solicitado en el taller, donde dice que se deben crear como minimo dos estudiantes, dos docentes y dos administrativos
+#Para el punto 5, le solicite a Gemini también, que me ayudara a realizar el main para probar la fase 5 del taller
+# se desarrolla lo solicitado en el taller, donde dice que se deben crear como minimo dos estudiantes, dos docentes y dos administrativos
 #Además de aplicar el ciclo solicitado y a su vez el polimorfismo que se indica. 
 
     try: 
-        personas =  [
-        Estudiante("106170", "Alejandro Paredes", "AlejandroParedes@unicomfacauca.edu.co", "CP106", "Contaduría Pública", 7, 4.5), 
-        Estudiante("106171", "Sofia Bedoya", "SofiaBedoya@unicomfacauca.edu.co", "CP107", "Administración de Empresas", 7, 4.2), 
+        personas = [
+            Estudiante("106170", "Alejandro Paredes", "AlejandroParedes@unicomfacauca.edu.co", "CP106", "Contaduría Pública", 7, 4.5), 
+            Estudiante("106171", "Sofia Bedoya", "SofiaBedoya@unicomfacauca.edu.co", "CP107", "Administración de Empresas", 7, 4.5),
+            Docente("252776", "Claudia Gómez", "cgomez@unicomfacauca.edu.co", "DOC1020", "Facultad de Ciencias Empresariales", "Tiempo Completo", 40),
+            Docente("252777", "Javier Montoya", "jmontoya@unicomfacauca.edu.co", "DOC1021", "Facultad de humanidades", "Cátedra", 16),
+            Administrativo("45612378", "Juan José Gómez", "jgomez@unicomfacauca.edu.co", "ADM5001", "Registro y Control", "Coordinador de Admisiones", "Diurna"),
+            Administrativo("45612379", "Andrés Hurtado", "ahurtado@unicomfacauca.edu.co", "ADM5002", "Talento Humano", "Analista de Nómina", "Mixta")
         ]
+
+        for persona in personas:
+            persona.mostrar_informacion()
+            persona.realizar_actividad_principal()
+            print("-" * 50 + "\n")
+
+    except ValueError as e:
+        print(f"Error de validación: {e}")
+    except Exception as e:
+        print(f"Ocurrió un error inesperado: {e}")
+
+        
         
         
