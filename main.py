@@ -1,15 +1,16 @@
 
 #Main para el la clase persona
 from models.Persona import Persona
+#(AC2) Para la fase 2, en el main, tuve que comentar aalgunas cosas como; persona, ya que no se pueden instanciar directamente, ya que esta se volvió abstracta de acuerdo a lo solicitado en el requerimiento
+#p = Persona ("106170", "Alejandro Paredes", "AlejandroParedes@unicomfacauca.edu.co")
 
-p = Persona ("106170", "Alejandro Paredes", "AlejandroParedes@unicomfacauca.edu.co")
 
 # print(p.get_identification())
 # print(p.get_name())
 # print(p.get_email())
 
-p= Persona("106170", "Alejandro Paredes", "AlejandroParedes@unicomfacauca.edu.co")
-p.mostrar_informacion()
+#p= Persona("106170", "Alejandro Paredes", "AlejandroParedes@unicomfacauca.edu.co")
+
 
 #Main para la clase del programa Academico
 from models.ProgramaAcademico import ProgramaAcademico
@@ -31,13 +32,14 @@ a.mostrar_informacion()
 #Con ayuda de Gemini, realicé la creaición de un main para probar las validaciones de las actulizaciones que se realizaron en las clases de Programa Académico y a su vez de Asignatura. 
 from models.Persona import Persona
 
-p = Persona("106170", "Alejandro Paredes", "AlejandroParedes@unicomfacauca.edu.co")
+#Esta prueba usaba a la persona directamente, y ya no se podría ejecutar
+#p = Persona("106170", "Alejandro Paredes", "AlejandroParedes@unicomfacauca.edu.co")
 
-try:
+#try:
  
-    p.set_email("")
-except ValueError as e:
-    print("Validación exitosa:", e)
+#   p.set_email("")
+#except ValueError as e:
+#    print("Validación exitosa:", e)
 
 
 from models.ProgramaAcademico import ProgramaAcademico
@@ -130,7 +132,7 @@ from models.Administrativos import Administrativo
 
 def main():
     print("==================================================")
-    print("      SISTEMA ACADÉMICO - FASE 4 (POLIMORFISMO)  ")
+    print("      SISTEMA ACADÉMICO - FASE 4   ")
     print("==================================================\n")
 
     try:
@@ -208,6 +210,18 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Ocurrió un error inesperado: {e}")
 
+    
+    
+    
+    
+    
+    
+    
+        
+ 
         
         
         
+
+
+

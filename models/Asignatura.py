@@ -1,5 +1,8 @@
 # Y por último, esto fue relizado para el primer punto, donde se solicitaba crear la clase Asignatura, con su información además de un main para probar que la clase funcionara correctamente.
 
+
+
+
 class Asignatura: 
     def __init__(self, code, name, credits, academic_program):
         self.set_code(code)

@@ -1,6 +1,8 @@
 #Esto fue relizado para el primer punto, donde se solicitaba crear la clase persona, con su información además de un main para probar que la clase funcionara correctamente.
+#Para el trabajo 2, se añadió el abstracto según los solicitado para la clase persona. 
+from abc import ABC, abstractmethod
 
-class Persona:
+class Persona(ABC):
     
     def __init__(self, identification, name, email):
         
@@ -42,4 +44,10 @@ class Persona:
         print("Identificación:", self.get_identification())
         print("Nombre:", self.get_name())
         print("Email:", self.get_email())
+    
+    #Aqui se realiza lo que dice en el documento con los requerimientos, donde pide que el metodo se defuna como abstracto.   
+    @abstractmethod    
+    def realizar_actividad_principal(self):    
+        pass
+    
         
