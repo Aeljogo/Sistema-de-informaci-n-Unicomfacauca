@@ -20,11 +20,11 @@ O si se quiere, se pueden descargar los archivos, ubicarlos en una carpeta del P
 
 Este repositorio contiene la evolución del sistema de gestión académica que he venido realizando, de acuerdo a mi otra universidad (Unicomfacauca), desarrollado como parte de la Actividad  Nro 2. 
 
-- En la clase Abstracta, la Persona se convirtió en clase abstracta (`ABC`), esto no permite instanciación directa y exige la implementación de realizar_actividad_principal().
-- Oferta Académica, se hace la creación del modelo Grupo Academico, para la gestión de docentes, asignaturas, capacidad de cupos y estudiantes matriculados.
-- Relación de composición, Se Incorpora el modelo `Horario` dentro de GrupoA cademico.
-- Excepciones personalizadas corresponde al Control explícito de errores durante la matrícula, retiro de estudiantes y búsqueda de asignaturas o programas.
-- La continuidad,  Demostración de captura de excepciones en `mainII.py` sin detener la ejecución del programa.
+-En la clase Abstracta, la Persona se convirtió en clase abstracta (ABC), esto no permite instanciación directa y exige la implementación de realizar_actividad_principal().
+-Oferta Académica, se hace la creación del modelo Grupo Academico, para la gestión de docentes, asignaturas, capacidad de cupos y estudiantes matriculados.
+-Relación de composición, Se Incorpora el modelo Horario dentro de GrupoA cademico.
+-Excepciones personalizadas corresponde al Control explícito de errores durante la matrícula, retiro de estudiantes y búsqueda de asignaturas o programas.
+-La continuidad,  Demostración de captura de excepciones en `mainII.py` sin detener la ejecución del programa.
  Un grupo académico no es un horario, sino que tiene un horario.
  El horario nace dentro del grupo y solo existe mientras el grupo exista. Si el grupo se elimina, su horario asociado desaparece automáticamente.
 Así se debe ver la estructura dentro del proyecto
